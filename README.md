@@ -2,13 +2,6 @@ RolfTools
 =========
 ###### Version 1.0 (Nov. 2014) ######
 <br/>
-Here are the desktop prefrences for Professor Rolf's classes (AiNYC).
-
-> ### Classes ###
-> --Image Manipulation  
-> --Advanced Image Manipulation  
-> --Authoring Tools  
-> --Advanced Authoring Tools  (Processing)
 
 ### Preferences ###
 > -- Dark Grey Wallpaper  
