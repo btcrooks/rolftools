@@ -2,7 +2,6 @@ RolfTools
 =========
 ###### Version 1.0 (Nov. 2014) ######
 <br/>
-
 ### Preferences ###
 > -- Dark Grey Wallpaper  
 > --Icon Size:32x32  
