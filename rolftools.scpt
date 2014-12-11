@@ -23,8 +23,7 @@ tell application "System Events"
     tell property list item "DesktopViewSettings"
       tell property list item "IconViewSettings"
         set value of property list item "gridSpacing" to "100"
-        set value of property list item "iconSize" to "24"
-        set value of property list item "arrangeBy" to "none"
+        set value of property list item "
       end tell
     end tell
   end tell
@@ -34,10 +33,16 @@ tell application "System Events"
   end tell
 end tell
 tell application "Finder"
-  quit
-  delay 1
   activate
+  set iconViewOption to desktop's window's icon view options
+  tell iconViewOption
+    set arrangment to not arranged
+    set icon size to 24
+    set shows item info to false
+  end tell
+  quit
 end tell
-# Restart Finder
-do shell script "killall Dock"
-do shell script "killall SystemUIServer"
+# Restart Finder, Dock and System UI Server
+delay 1
+tell application "Finder" to activate
+do shell script "killall Dock & killall SystemUIServer"
