@@ -23,7 +23,7 @@ tell application "System Events"
 		tell property list item "DesktopViewSettings"
 			tell property list item "IconViewSettings"
 				set value of property list item "gridSpacing" to "100"
-				set value of property list item "iconSize" to "32"
+				set value of property list item "iconSize" to "24"
 				set value of property list item "arrangeBy" to "none"
 			end tell
 		end tell
